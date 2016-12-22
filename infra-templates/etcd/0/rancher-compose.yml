@@ -13,4 +13,4 @@ etcd:
         healthy_threshold: 2
         recreate_on_quorum_strategy_config:
             quorum: 2
-strategy: recreateOnQuorum
+        strategy: recreateOnQuorum
