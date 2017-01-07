@@ -1,5 +1,0 @@
-name: ETCD
-version: v2.3.7-9
-category: Storage
-labels:
-  io.rancher.orchestration.supported: 'kubernetes'
