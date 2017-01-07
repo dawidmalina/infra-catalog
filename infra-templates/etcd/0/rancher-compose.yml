@@ -1,3 +1,34 @@
+.catalog:
+  name: Etcd
+  version: v2.3.7-11
+  description: Etcd service
+  minimum_rancher_version: v1.2.0
+  questions:
+  - variable: RANCHER_DEBUG
+    label: Enable rabcger debug
+    description: "Ability to configure rancher debug mode"
+    required: true
+    default: true
+    type: boolean
+  - variable: EMBEDDED_BACKUPS
+    label: Enable Backups
+    description: "Periodically backup state to /var/etcd/backups. Mount network storage here on all hosts before continuing"
+    required: true
+    default: true
+    type: boolean
+  - variable: BACKUP_PERIOD
+    label: Backup Creation Period
+    description: Create a backup after this amount of time passes. Must conform to duration format
+    required: true
+    default: 15m0s
+    type: string
+  - variable: BACKUP_RETENTION
+    label: Backup Retention Period
+    description: Expire a backup after this amount of time passes. Must conform to duration format
+    required: true
+    default: 24h
+    type: string
+
 etcd:
     retain_ip: true
     scale_policy:
