@@ -2,3 +2,5 @@ name: Etcd
 description: External key-value storege for kubernetes
 version: v2.3.7-11
 category: Storage
+labels:
+  io.rancher.orchestration.supported: 'cattle,mesos,swarm,kubernetes,K8S'
