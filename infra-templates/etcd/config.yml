@@ -1,4 +1,4 @@
 name: Etcd
-description: Distributed reliable key-value store for the most critical data of a distributed system https://coreos.com/etcd/docs/latest/
+description: External key-value storege for kubernetes
 version: v2.3.7-11
 category: Storage

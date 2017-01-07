@@ -5,7 +5,7 @@
   minimum_rancher_version: v1.2.0
   questions:
   - variable: RANCHER_DEBUG
-    label: Enable rabcger debug
+    label: Enable rancher debug
     description: "Ability to configure rancher debug mode"
     required: true
     default: true
